@@ -97,3 +97,19 @@ article.post:last-of-type{
 article.page h2{
   font-size: 300%;
 }
+
+/* Clearfix */
+.clearfix:before, .clearfix:after{content: ""; display: table;}
+.clearfix:after{clear: both;}
+.clearfix{zoom: 1;}
+
+/* Two Column Title Layout */
+div.title-column{
+  width: 30%;
+  float: left;
+}
+
+div.text-column{
+  width: 70%;
+  float: right;
+}
