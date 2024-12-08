@@ -13,4 +13,8 @@ register_nav_menus(array(
     'footer' => __('Footer Menu'),
 ));
 
+// Get top ancestor
+function get_top_ancestor_id(){
+    
+}
 ?>
