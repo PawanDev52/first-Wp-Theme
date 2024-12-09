@@ -6,23 +6,27 @@ if (have_posts()) :
     while (have_posts()) : the_post(); ?>
         <article class="post page">
 
-        <nav class="site-nav children-links clearfix">
+            <?php
 
-        
+            if (has_children() or $post->post_parent > 0) { ?>
 
-        <span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"><?php echo get_the_title(get_top_ancestor_id()); ?></a></span>
+                <nav class="site-nav children-links clearfix">
 
-        <ul>
-        <?php
-        $args = array(
-            'child_of' => get_top_ancestor_id(),
-            'title_li' => ''
-        );
-        ?>
-        <?php wp_list_pages($args); ?>
+                    <span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()); ?>"><?php echo get_the_title(get_top_ancestor_id()); ?></a></span>
 
-        </ul>
-        </nav>
+                    <ul>
+                        <?php
+                        $args = array(
+                            'child_of' => get_top_ancestor_id(),
+                            'title_li' => ''
+                        );
+                        ?>
+                        <?php wp_list_pages($args); ?>
+
+                    </ul>
+                </nav>
+
+            <?php } ?>
 
             <h2><?php the_title(); ?></h2>
             <?php the_content(); ?>
