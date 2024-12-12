@@ -58,9 +58,11 @@ article.post:last-of-type {
   content: "";
   display: table;
 }
+
 .site-nav ul:after {
   clear: both;
 }
+
 .site-nav ul {
   zoom: 1;
 }
@@ -115,9 +117,11 @@ article.page h2 {
   content: "";
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
+
 .clearfix {
   zoom: 1;
 }
