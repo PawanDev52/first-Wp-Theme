@@ -15,6 +15,15 @@ if (have_posts()) :
                 $separator = ", ";
                 $output = '';
 
+                if ($categories) {
+
+                    foreach ($categories as $category) {
+
+                        $output .= $category->cat_name . $separator;
+                    }
+
+                    echo $output;
+                }
                 ?>
 
             </p>
