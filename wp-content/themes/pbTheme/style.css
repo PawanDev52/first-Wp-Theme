@@ -196,16 +196,16 @@ div.info-box p {
 }
 
 /* Post styles */
-.post h2{
+.post h2 {
   margin-bottom: 0;
 }
 
-p.post-info{
+p.post-info {
   font-size: 95%;
   color: #999;
 }
 
 p.post-info a:link,
-p.post-info a:visited{
+p.post-info a:visited {
   color: #999;
 }
