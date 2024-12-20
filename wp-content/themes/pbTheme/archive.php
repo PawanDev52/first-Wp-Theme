@@ -19,9 +19,9 @@ if (have_posts()) :
         } elseif (is_day()) {
             echo 'Daily Archives: ' . get_the_date();
         } elseif (is_month()) {
-            echo 'Month';
+            echo 'Monthly Archives: ' . get_the_date('F Y');
         } elseif (is_year()) {
-            echo 'Year';
+            echo 'Yearly Archives: ' . get_the_date('Y');
         } else {
             echo 'Archive';
         }
