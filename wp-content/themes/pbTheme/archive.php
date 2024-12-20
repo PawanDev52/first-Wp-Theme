@@ -9,9 +9,9 @@ if (have_posts()) :
     <h2><?php
 
         if (is_category()) {
-            echo 'This is a category';
+            single_cat_title();
         } elseif (is_tag()) {
-            echo 'Tag';
+            single_tag_title();
         } elseif (is_author()) {
             echo 'Author';
         } elseif (is_day()) {
