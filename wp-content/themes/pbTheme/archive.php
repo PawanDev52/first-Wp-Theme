@@ -13,9 +13,11 @@ if (have_posts()) :
         } elseif (is_tag()) {
             single_tag_title();
         } elseif (is_author()) {
-            echo 'Author';
+            the_post();
+            echo 'Author Archives: ' . get_the_author();
+            rewind_posts();
         } elseif (is_day()) {
-            echo 'Day archive';
+            echo 'Daily Archives: ' . get_the_date();
         } elseif (is_month()) {
             echo 'Month';
         } elseif (is_year()) {
