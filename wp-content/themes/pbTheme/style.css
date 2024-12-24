@@ -191,7 +191,7 @@ div.info-box p {
 .children-links .current_page_item a:link,
 .children-links .current_page_item a:visited {
   border-bottom: 1px solid #ddd;
-  color: #333;
+  color: #333333;
   cursor: default;
 }
 
