@@ -8,7 +8,7 @@ Version: 1.0
 body {
   font-family: Arial, sans-serif;
   font-size: 14px;
-  color: #333;
+  color: #333333;
 }
 
 a:link,
@@ -185,7 +185,7 @@ div.info-box p {
 
 .children-links .parent-link a:link,
 .children-links .parent-link a:visited {
-  color: #333;
+  color: #333333;
 }
 
 .children-links .current_page_item a:link,
@@ -197,7 +197,7 @@ div.info-box p {
 
 /* Post styles */
 .post h2 {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 p.post-info {
